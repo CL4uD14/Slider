@@ -23,3 +23,14 @@ function refreshSwatch() {
 
 	$( "#background" ).css( "background-color", myColor );
 }
+
+$(function() {
+	  $( "#horizontalSlider" ).slider({
+        orientation: "horizontal",
+		    range: "min",
+		    max: 100,
+		    value: 0,
+		    slide: refreshSwatch,
+		    change: refreshSwatch
+	  });
+});
