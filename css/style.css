@@ -1,0 +1,26 @@
+.slider {
+  width: 20%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.slider .ui-slider-range {
+	background: #fff;
+}
+
+.slider .ui-state-default, .ui-widget-content .ui-state-default {
+	background: none;
+	background-color: #fff;
+}
+
+#background {
+  background-color: #D92727;
+  transition: background-color 1s ease;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
