@@ -18,10 +18,17 @@ function getTheColor( colorVal ) {
 }
 
 function refreshSwatch() {
-	var slider = $( ".slider" ).slider( "value" ),
-	myColor = getTheColor( slider );
+	var horizontalSlider = $( "#horizontalSlider" ).slider( "value" ),
+	myColor = getTheColor( horizontalSlider );
 
 	$( "#background" ).css( "background-color", myColor );
+}
+
+function refreshSwatch2() {
+	var verticalSlider = $( "#verticalSlider" ).slider( "value" ),
+	myColor2 = getTheColor( verticalSlider );
+
+	$( "#background" ).css( "background-color", myColor2 );
 }
 
 $(function() {
@@ -41,7 +48,7 @@ $(function() {
 		    range: "min",
 		    max: 100,
 		    value: 0,
-		    slide: refreshSwatch,
-		    change: refreshSwatch
+		    slide: refreshSwatch2,
+		    change: refreshSwatch2
 	  });
 });
