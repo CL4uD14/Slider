@@ -34,3 +34,14 @@ $(function() {
 		    change: refreshSwatch
 	  });
 });
+
+$(function() {
+	  $( "#verticalSlider" ).slider({
+        orientation: "vertical",
+		    range: "min",
+		    max: 100,
+		    value: 0,
+		    slide: refreshSwatch,
+		    change: refreshSwatch
+	  });
+});
